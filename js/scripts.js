@@ -38,10 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
             infoDiv.addEventListener('click', function() {
                 map.setView([coords[1], coords[0]], 8);
                 marker.openPopup();
-                infoDiv.classList.add('focus-animation');
-                setTimeout(() => {
-                    infoDiv.classList.remove('focus-animation');
-                }, 1000);
             });
             document.getElementById('earthquake-info').appendChild(infoDiv);
         });

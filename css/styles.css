@@ -50,13 +50,7 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    cursor: pointer;
     animation: fadeIn 1.5s ease-in-out;
-}
-
-.earthquake:hover {
-    background-color: #e6f7ff;
-    transform: scale(1.02);
 }
 
 @keyframes fadeIn {
@@ -72,10 +66,4 @@ body {
 @keyframes zoomIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes focusIn {
-    0% { background-color: #fff3cd; transform: scale(1); }
-    50% { background-color: #ffeeba; transform: scale(1.1); }
-    100% { background-color: #fff3cd; transform: scale(1); }
 }
