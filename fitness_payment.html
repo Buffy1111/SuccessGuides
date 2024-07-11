@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תשלום עבור מדריך בריאות וכושר</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            padding: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            color: #f90;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+        .product-image {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            animation: bounce 2s infinite;
+            margin-bottom: 20px;
+        }
+        .product-description {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .payment-form {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .paypal-button {
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .paypal-button:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 50px;
+            color: #777;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>תשלום עבור מדריך בריאות וכושר</h1>
+    <img src="b.png" alt="מדריך בריאות וכושר" class="product-image">
+    <div class="product-description">
+        מדריך מקיף הכולל תוכניות אימונים, טיפים לתזונה נכונה ומעקב אחר ההתקדמות שלך.
+    </div>
+    <div class="payment-form">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="8SN6STM6F8LLW" />
+            <input type="hidden" name="currency_code" value="ILS" />
+            <input type="image" src="https://www.paypalobjects.com/he_IL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal היא הדרך הקלה והבטוחה יותר לשלם באינטרנט!" alt="קנה עכשיו" class="paypal-button" />
+        </form>
+    </div>
+    <div class="footer">
+        © 2024 מדריכים דיגיטליים להצלחה
+    </div>
+</body>
+</html>
